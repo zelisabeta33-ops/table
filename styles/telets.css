@@ -1,0 +1,5 @@
+.telets{
+    background-color: rgb(115, 182, 182);
+    filter: drop-shadow(0px 0px 10px white);
+    cursor: pointer;
+}
