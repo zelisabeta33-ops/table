@@ -1,0 +1,8 @@
+.head{
+    height: 60px;
+}
+.head span{
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 30px;
+}
