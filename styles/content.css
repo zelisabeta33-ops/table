@@ -1,0 +1,65 @@
+.state-input{
+    display: none;
+}
+.gallery{
+    position: relative;
+    margin: -30px 50px 0px;
+}
+.gallery img{
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+    width: 500px;
+    height: 333px;
+    float: left;
+    border-radius: 20px;
+    filter: drop-shadow(0px 0px 20px rgb(240, 248, 255));
+    transition: opacity 0.4s ease-in-out;
+    cursor: pointer;
+}
+.galerry:hover img{
+    opacity: 1;
+}
+.inside-img{
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.state-input:checked ~ .content .outside-img{
+    opacity: 0;
+}
+.state-input:checked ~ .content .inside-img{
+    opacity: 1;
+    pointer-events: auto;
+}
+.label{
+    padding: 10px 15px;
+    background-color: #0505088f;
+    color: aliceblue;
+    border: 1px solid rgb(240, 248, 255);
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    margin: 0 50px;
+}
+.label .inside{
+    display: none;
+}
+.label .outside{
+    display: inline;
+}
+.state-input:checked ~ .content .label .outside{
+    display: none;
+}
+.state-input:checked ~ .content .label .inside{
+    display: inline;
+}
+.content p{
+    display: flex;
+    color: aliceblue;
+    padding: 0px 50px 30px 50px;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: cursive;
+}

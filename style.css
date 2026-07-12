@@ -1,7 +1,6 @@
-@import url(./styles/telets.css);
-@import url(./styles/oven.css);
-@import url(./styles/components/zodiac.css);
-@import url(./styles/components/head.css);
+@import url(./styles/content.css);
+@import url(./styles/zodiac.css);
+@import url(./styles/head.css);
 
 body{
     background-image: url(./images/space-background-with-stars-vector-illustration_97886-319.avif);
@@ -17,8 +16,8 @@ table{
 }
 .center{
     width: 950px;
+    background-color: rgba(10, 10, 10, 0.621);
 }
 a{
     text-decoration: none;
-    color: black;
 }
