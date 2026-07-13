@@ -1,3 +1,16 @@
+.content{
+    animation: apearence 0.5s ease-out forwards;
+}
+@keyframes apearence{
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+    }
+}
 .state-input{
     display: none;
 }
@@ -11,8 +24,8 @@
     width: 500px;
     height: 333px;
     float: left;
-    border-radius: 20px;
-    filter: drop-shadow(0px 0px 20px rgb(240, 248, 255));
+    border-radius: 30px;
+    filter: drop-shadow(0px 0px 20px rgba(0, 162, 255, 0.8));
     transition: opacity 0.4s ease-in-out;
     cursor: pointer;
 }
@@ -22,19 +35,18 @@
 .inside-img{
     position: absolute;
     opacity: 0;
-    pointer-events: none;
 }
 .state-input:checked ~ .content .outside-img{
     opacity: 0;
 }
 .state-input:checked ~ .content .inside-img{
     opacity: 1;
-    pointer-events: auto;
 }
 .label{
+    display: inline-block;
     padding: 10px 15px;
     background-color: #0505088f;
-    color: aliceblue;
+    color: rgb(175, 203, 228);
     border: 1px solid rgb(240, 248, 255);
     border-radius: 10px;
     text-transform: uppercase;
@@ -42,6 +54,9 @@
     font-weight: bold;
     transition: all 0.4s ease;
     margin: 0 50px;
+}
+.label:active{
+    transform: scale(1.2);
 }
 .label .inside{
     display: none;
@@ -57,7 +72,7 @@
 }
 .content p{
     display: flex;
-    color: aliceblue;
+    color: rgb(207, 219, 230);
     padding: 0px 50px 30px 50px;
     font-size: 20px;
     line-height: 1.5;

@@ -3,7 +3,20 @@
     background-color: #0505088f;
 }
 .head span{
-    color: aliceblue;
+    color: rgb(87, 189, 249);
     text-transform: uppercase;
     font-size: 30px;
+    animation: appear 0.5s ease-out forwards;
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+        filter: blur(10px);
+        letter-spacing: -5px;
+    }
+    100%{
+        opacity: 1;
+        filter: blur(0);
+        letter-spacing: 2px;
+    }
 }

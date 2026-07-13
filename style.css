@@ -6,7 +6,7 @@ body{
     background-image: url(./images/space-background-with-stars-vector-illustration_97886-319.avif);
 }
 table, th, td{
-    border: 2px solid aliceblue;
+    border: 2px solid rgba(240, 248, 255, 0.658);
     margin: 100px auto;
     border-collapse: collapse;
 }
